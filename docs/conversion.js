@@ -23,14 +23,17 @@ const yrl_conversion = (content = {}) => {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const rawResponse = await fetch(`https://dev-cdn.yrl.is/conversion/`, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ yrl: refId, content: content }),
-      });
+      const rawResponse = await fetch(
+        `https://staging-cdn.yrl.is/conversion/`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ yrl: refId, content: content }),
+        }
+      );
       const resp = await rawResponse.json();
       document.cookie = `__yrl_referral=; Expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
       resolve("success");
