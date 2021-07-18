@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "yrl-dev-gcp"
+  },
+  "targets": {
+    "yrl-dev-gcp": {
+      "hosting": {
+        "dev-cdn-yrl": [
+          "dev-cdn-yrl"
+        ],
+        "staging-cdn-yrl": [
+          "staging-cdn-yrl"
+        ]
+      }
+    }
   }
 }
