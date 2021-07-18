@@ -1,4 +1,4 @@
 
-Dev script is here: https://storage.googleapis.com/yrl-public-assets/yrl-script/conversion.js
+Dev script is here: https://yrl-dev-gcp.web.app/conversion.js
 
 The script in this repo is for Prod only.
