@@ -1,5 +1,4 @@
 const setCookie = () => {
-  console.log("reached to the setcookie");
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const y = urlParams.get("yrl_y");
@@ -12,7 +11,6 @@ const setCookie = () => {
 
 setCookie();
 const yrl_conversion = (content = {}) => {
-  console.log("reached conversion!");
   let cookies = decodeURIComponent(document.cookie).split(";");
   let refId = "";
   for (let i = 0; i < cookies.length; i++) {
