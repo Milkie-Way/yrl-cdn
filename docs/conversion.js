@@ -1,4 +1,5 @@
 const setCookie = () => {
+  console.log("reached to the setcookie");
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const y = urlParams.get("yrl_y");
