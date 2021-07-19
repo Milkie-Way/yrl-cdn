@@ -6,7 +6,7 @@ const setCookie = () => {
   const expires = "expires=" + new Date(d).toUTCString();
   if (y) document.cookie = `__yrl_referral=${y};` + expires;
 };
-
+console.log("yrl script triggered");
 setCookie();
 const yrl_conversion = (content = {}) => {
   console.log("Recording YRL Conversion");
