@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "dev-cdn-yrl",
-      "public": "docs/",
+      "public": "dev/",
       "headers": [
         {
           "source": "/**",
@@ -26,9 +26,8 @@
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     },
     {
-      "site": "staging-cdn-yrl",
-
-      "public": "docs/",
+      "target": "staging-cdn-yrl",
+      "public": "staging/",
       "headers": [
         {
           "source": "/**",
