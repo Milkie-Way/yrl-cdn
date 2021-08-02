@@ -10,7 +10,7 @@ const setCookie = () => {
 };
 
 setCookie();
-const yrl_conversion = (content = {}) => {
+const dev_yrl_conversion = (content = {}) => {
   let cookies = decodeURIComponent(document.cookie).split(";");
   let refId = "";
   for (let i = 0; i < cookies.length; i++) {
