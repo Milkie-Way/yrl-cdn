@@ -11,7 +11,6 @@ const setCookie = () => {
 
 setCookie();
 const yrl_conversion = (content = {}) => {
-  console.log("Recording YRL Conversion");
   let cookies = decodeURIComponent(document.cookie).split(";");
   let refId = "";
   for (let i = 0; i < cookies.length; i++) {
@@ -26,7 +25,7 @@ const yrl_conversion = (content = {}) => {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const rawResponse = await fetch(`https://yrl.is/conversion/`, {
+      const rawResponse = await fetch(`https://staging.yrl.is/conversion/`, {
         method: "POST",
         headers: {
           Accept: "application/json",
